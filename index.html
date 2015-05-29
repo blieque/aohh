@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>An Open Headphone Holder</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="assets/main.css">
+		<script>
+			window.onload = function() {
+
+				elemRoot = document.querySelector('body');
+				elemLinks = document.querySelectorAll('nav a');
+
+				elemRoot.onscroll = function() {
+					var yDiv = document.querySelector('img').height;
+					var index = Math.floor(window.scrollY / yDiv);
+
+					document.querySelector('.s').classList.remove('s');
+					elemLinks[index].classList.add('s');
+				}
+
+				elemLinks[0].onclick = 
+				elemLinks[1].onclick = 
+				elemLinks[2].onclick = 
+				elemLinks[3].onclick = 
+				elemLinks[4].onclick = function() {
+					document.querySelector('.s').classList.remove('s');
+					this.classList.add('s');
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<div id="image-1">
+			<img src="assets/1.jpg">
+		</div>
+		<div id="image-2">
+			<img src="assets/2.jpg">
+		</div>
+		<div id="loop">
+			<video autoplay loop>
+				<source src="assets/3.webm" type="video/webm">
+				<source src="assets/3.mp4" type="video/mp4">
+				<div>I'm sorry; your browser doesn't support HTML5 video.</div>
+			</video>
+		</div>
+		<div id="image-3">
+			<img src="assets/4.png">
+		</div>
+		<div id="image-4">
+			<img src="assets/5.png">
+		</div>
+		<nav>
+			<a href="#image-1" class="s">Image One</a>
+			<a href="#image-2">Image Two</a>
+			<a href="#loop">Loop</a>
+			<a href="#image-3">Image Three</a>
+			<a href="#image-4">Image Four</a>
+		</nav>
+	</body>
+</html>
