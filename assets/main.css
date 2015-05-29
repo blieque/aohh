@@ -53,12 +53,12 @@ nav a.s {
 	}
 
 	nav {
-		width:22vh;
-		height:1.2vh;
-		top:2.4vh;
-		left:39vh;
+		width:22vw;
+		height:1.2vw;
+		top:2.4vw;
+		left:39vw;
 	}
 	nav a {
-		margin:0 1.6vh
+		margin:0 1.6vw;
 	}
 }
