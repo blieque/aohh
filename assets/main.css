@@ -2,6 +2,7 @@ body {
 	margin:0;
 	color:#fff;
 	font-family:helvetica neue,droid sans,segoe ui,sans-serif;
+	min-height:100vh;
 }
 div div {
 	padding:2em 1em;
@@ -21,7 +22,8 @@ div:nth-child(1) {
 div:nth-child(2) {
 	background:#658be5;
 }
-div:nth-child(3),div:nth-child(5) {
+/*div:nth-child(3),div:nth-child(5)*/
+body {
 	background:#242424;
 }
 
@@ -33,11 +35,11 @@ nav {
 	height:22vh;
 }
 nav a {
-	display:inline-block;
 	margin:1.6vh 0;
-	height:1.2vh;
+	float:left;
 	width:1.2vh;
-	border-radius:1vh;
+	height:1.2vh;
+	border-radius:4vh;
 	text-indent:-999em;
 	background:#525252;
 	transition:.2s;
@@ -53,12 +55,15 @@ nav a.s {
 	}
 
 	nav {
-		width:22vw;
-		height:1.2vw;
-		top:2.4vw;
-		left:39vw;
+		top:4.8vw;
+		left:28vw;
+		width:44vw;
+		height:2.4vw;
 	}
 	nav a {
-		margin:0 1.6vw;
+		margin:0 3.2vw;
+		width:2.4vw;
+		height:2.4vw;
+		border-radius:8vw;
 	}
 }
