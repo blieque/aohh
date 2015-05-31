@@ -1,0 +1,1 @@
+This directory holds any images and video created showing the model. Once edited and encoded in the right format, this media will only appear in the [`gh-pages` branch](https://github.com/blieque/aohh/tree/gh-pages), if used on the [project page](https://blieque.github.io/aohh/).
