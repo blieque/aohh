@@ -11,4 +11,3 @@ This is an open (as in *libre* open; it has an MIT license) design of a wall-mou
 ## Temporary Notes
 
 - If you have suggestions for a better name, *please* make yourself heard.
-- My final submission is not yet available.
